@@ -10,7 +10,7 @@ for(let i = 0; i < userNumber; i++) {
     userArray.push(Math.floor(Math.random() * 100) + 1)
 }
 
-for(let k = userArray.length - 5; k <= userArray.length; k++) {
+for(let k = userArray.length - 5; k < userArray.length; k++) {
     console.log (userArray[k])
 }
 
