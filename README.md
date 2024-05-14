@@ -28,3 +28,23 @@ Probabilmente  conviene controllare che il numero di elementi della coda non sia
 Cartella: array_bonus
 Crea due array che hanno un numero di elementi diversi.
 Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+
+
+
+1. TuttiFrutti
+    - creare array frigorifero con elementi frutta all'interno
+    - pushare elemento pesca all'interno dell'array frigorifero
+    - implementare funzione per cercare all'interno dell'array frigorifero
+    - verificare la presenza del cocomero e attraverso funzione if stampiamo risultato della ricerca
+
+2. La coda dell'Array
+    - creiamo un prompt per chiedere all'utente il numero di elementi da inserire
+    - creiamo un array dove inserire gli elementi generati
+    - usando funzione for ripetuta un numero di volte pari al numero scelto dall'utente, aggiungiamo elementi numero random all'array.
+    - imlementiamo funzione per stampare gli ultimi 5 elementi inseriti nell'array
+
+3.  (Bonus)
+    - creare due varianti rappresentanti due numeri generati randomicamente
+    - creare due array con un numero casuale di elementi all'interno
+    - paragonare gli elementi nell'indice dei due array
+    - usare una funzione if che aggiunge elementi all'array con meno elementi fino a raggiungere il numero di elementi dell'altro array
