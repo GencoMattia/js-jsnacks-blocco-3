@@ -1,35 +1,17 @@
-// Crea due array che hanno un numero di elementi diversi. 
-// Aggiungi elementi all'array che ha meno elementi fino a quando ne avrà tanti quanti l'altro.
+// Crea un array vuoto. Chiedi fino a che l'array non ha 6 numeri all'utente di inserire un numero,
+// se è dispari inseriscilo nell'array.
 
-let firstArray = []
-let secondArray = []
+let array = [];
+let arraySize = 6;
 
-const randomNumber = Math.floor(Math.random() * 20) + 1
-const randomNumberBis = Math.floor(Math.random() * 20) + 1
 
-let difference;
 
-for (let i = 0; i < randomNumber; i++) {
-    firstArray.push(Math.floor(Math.random() * 100) + 1)
-}
-console.log(firstArray)
-for (let i = 0; i < randomNumberBis; i++) {
-    secondArray.push(Math.floor(Math.random() * 100) + 1)
-}
-console.log(secondArray)
-
-if (firstArray.length > secondArray.length){
-    difference = firstArray.length - secondArray.length
-    console.log(difference)
-    while(secondArray.length < firstArray.length){
-        secondArray.push(Math.floor(Math.random() * 100) + 1)
+while(array.length < arraySize) {
+    let userNumber = Number.parseInt(prompt("scegli un numero"), 10);
+    if (!Number.isNaN(userNumber) && userNumber % 2 === 1){
+        array.push(userNumber)
     }
-} else {
-    difference = secondArray.length - firstArray.length
-    console.log(difference)
-    while(firstArray.length < secondArray.length){
-        firstArray.push(Math.floor(Math.random() * 100) + 1)
-    }
+
 }
 
-console.log(firstArray, secondArray)
+console.log(array)
