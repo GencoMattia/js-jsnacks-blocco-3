@@ -12,7 +12,14 @@ let difference;
 if (firstArray.length > secondArray.length){
     difference = firstArray.length - secondArray.length
     console.log(difference)
+    while(secondArray.length < firstArray.length){
+        secondArray.push(Math.floor(Math.random() * 100) + 1)
+    }
 } else {
     difference = secondArray.length - firstArray.length
     console.log(difference)
+    while(firstArray.length < secondArray.length){
+        firstArray.push(Math.floor(Math.random() * 100) + 1)
+    }
 }
+
