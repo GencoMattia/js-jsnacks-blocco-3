@@ -4,11 +4,14 @@
 let array = [];
 let arraySize = 6;
 
-const userNumber = Number.parseInt(prompt("scegli un numero"), 10);
 
 
-while (array.length <= arraySize) {
-    if (userNumber % 2 === 1){
+while(array.length < arraySize) {
+    let userNumber = Number.parseInt(prompt("scegli un numero"), 10);
+    if (!Number.isNaN(userNumber) && userNumber % 2 === 1){
         array.push(userNumber)
     }
+
 }
+
+console.log(array)
