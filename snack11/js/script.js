@@ -6,7 +6,7 @@ let sum = 0;
 
 while(sum < 50){
     let userNumber = Number.parseInt(prompt("scegli un numero"), 10)
-    if(Number.isNaN(userNumber) || userNumber >= 50){
+    if(Number.isNaN(userNumber) || userNumber >= 50 || userNumber < 1){
         userNumber = Math.round(Math.random() * 10) + 1
     } else {
         array.push(userNumber)
