@@ -23,3 +23,4 @@ if (firstArray.length > secondArray.length){
     }
 }
 
+console.log(firstArray, secondArray)
