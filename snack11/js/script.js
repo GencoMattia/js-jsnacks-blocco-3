@@ -10,6 +10,7 @@ while(sum < 50){
         userNumber = Math.round(Math.random() * 10) + 1
     } else {
         array.push(userNumber)
+        sum += userNumber
     }
 }
 
