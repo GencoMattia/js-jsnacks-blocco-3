@@ -7,7 +7,8 @@ let arraySize = 6;
 const userNumber = Number.parseInt(prompt("scegli un numero"), 10);
 
 
-while (userNumber % 2 === 1) {
-    array.push(userNumber)
-    array.length === arraySize
+while (array.length <= arraySize) {
+    if (userNumber % 2 === 1){
+        array.push(userNumber)
+    }
 }
