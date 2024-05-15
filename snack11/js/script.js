@@ -13,5 +13,5 @@ while(sum < 50){
         sum += userNumber
     }
 }
-
+console.log(sum)
 console.log(array)
