@@ -11,12 +11,12 @@ let difference;
 
 for (let i = 0; i < randomNumber; i++) {
     firstArray.push(Math.floor(Math.random() * 100) + 1)
-    // console.log(firstArray)
 }
+console.log(firstArray)
 for (let i = 0; i < randomNumberBis; i++) {
     secondArray.push(Math.floor(Math.random() * 100) + 1)
-    // console.log(secondArray)
 }
+console.log(secondArray)
 
 if (firstArray.length > secondArray.length){
     difference = firstArray.length - secondArray.length
