@@ -1,7 +1,7 @@
 // Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
-const firstWord = prompt("Scegli la prima parola")
-const secondWord = prompt("Scegli la seconda parola")
+const firstUser = prompt("Scegli la prima parola")
+const secondUser = prompt("Scegli la seconda parola")
 
 
 
@@ -18,4 +18,4 @@ function longestWord(firstWord, secondWord) {
     
 }
 
-console.log(longestWord())
+console.log(longestWord(firstUser, secondUser))
