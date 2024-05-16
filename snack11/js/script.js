@@ -1,21 +1,17 @@
-// Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
+// Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. 
+// Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50.
 
-const firstUser = prompt("Scegli la prima parola")
-const secondUser = prompt("Scegli la seconda parola")
+const array = [];
+let sum = 0;
 
-
-
-function longestWord(firstWord, secondWord) {
-    
-    if(firstWord.length === secondWord.length){
-        const draw = `${firstWord} e ${secondWord} sono lunghi uguali`
-        return draw
-    } else if(firstWord.length > secondWord.length) {
-        return firstWord
+while(sum < 50){
+    let userNumber = Number.parseInt(prompt("scegli un numero"), 10);
+    if(Number.isNaN(userNumber) || userNumber >= 50 || userNumber < 1){
+        userNumber = Math.round(Math.random() * 10) + 1;
     } else {
-        return secondWord
+        array.push(userNumber);
+        sum += userNumber;
     }
-    
 }
-
-console.log(longestWord(firstUser, secondUser))
+console.log(sum);
+console.log(array);
