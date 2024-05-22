@@ -9,3 +9,5 @@ const palla = {
 }
 
 const userBallWeight = Number.parseFloat(prompt("Quanto pesa la palla?"));
+
+palla.peso = [userBallWeight];
