@@ -4,10 +4,14 @@
 // Attraverso un prompt dare la possibilità all'utente di modificare il peso della palla.
 
 const palla = {
-    nome: "palla";
-    peso: 10
+    nome: "palla",
+    peso: 10,
 }
+
+console.log(palla)
 
 const userBallWeight = Number.parseFloat(prompt("Quanto pesa la palla?"));
 
-palla.peso = [userBallWeight];
+palla.peso = userBallWeight;
+
+console.log(palla)
