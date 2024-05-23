@@ -82,9 +82,29 @@ const carsList = [
     }
 ];
 
-const benzinaCarsList = carsList.filter((element) => {
-    return element.alimentazione["benzina"];
+const benzinaCarsList = carsList.filter((singleAuto) => {
+    if(singleAuto.alimentazione === "benzina"){
+        return true
+    }
 });
+
+const dieselCarsList = carsList.filter((singleAuto) => {
+    if(singleAuto.alimentazione === "diesel"){
+        return true
+    }
+});
+
+const otherCarsList = carsList.filter((singleAuto) => {
+    if(singleAuto.alimentazione !== "benzina" && "diesel"){
+        return true
+    }
+});
+
+
 
 console.log(carsList);
 console.log(benzinaCarsList);
+console.log(dieselCarsList);
+console.log(otherCarsList);
+
+
