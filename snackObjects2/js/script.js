@@ -59,7 +59,7 @@ const clientsList = [
 
 console.log(clientsList);
 
-const cannotDriveClients = clientsList.forEach((client){
+const cannotDriveClients = clientsList.forEach((client) => {
     if(client.age >= 18 && client.age <= 70){
         client.drivingLicense = "Idoneo alla guida"
     } else {
