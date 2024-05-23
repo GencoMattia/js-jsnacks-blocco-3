@@ -67,10 +67,16 @@ clientsList.forEach((client) => {
     }
 });
 
-const cannotDriveClient = clientsList.filter((client) => {
-    if(client.drivingLicense === "Non idoneo alla guida"){
-        return true
-    }
+const canDriveClient = clientsList.map((client) => {
+    return `${client.name} ${client.surname}: ${(client.age >= 18 && client.age <= 70) ? "Idoneo a guidare" : "Non idoneo a guidare"}`
 });
 
-console.log(cannotDriveClient);
+console.log(canDriveClient);
+
+// const cannotDriveClient = clientsList.filter((client) => {
+//     if(client.drivingLicense === "Non idoneo alla guida"){
+//         return true
+//     }
+// });
+
+// console.log(cannotDriveClient);
