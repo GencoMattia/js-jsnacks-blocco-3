@@ -81,3 +81,10 @@ const carsList = [
         alimentazione: "metano",
     }
 ];
+
+const benzinaCarsList = carsList.filter((element) => {
+    return element.alimentazione["benzina"];
+});
+
+console.log(carsList);
+console.log(benzinaCarsList);
