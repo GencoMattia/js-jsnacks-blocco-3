@@ -67,4 +67,10 @@ clientsList.forEach((client) => {
     }
 });
 
+const cannotDriveClient = clientsList.filter((client) => {
+    if(client.drivingLicense === "Non idoneo alla guida"){
+        return true
+    }
+});
 
+console.log(cannotDriveClient);
