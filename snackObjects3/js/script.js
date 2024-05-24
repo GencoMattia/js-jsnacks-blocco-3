@@ -21,12 +21,15 @@ const browserWindow = [
     tab: ["Twitter", 'Facebook', "GitHub", "Gmail"],
     activeTab: 0,
     },
-]
+];
 
 const socialsList = ["Twitter", "Facebook"];
 
-browserWindow.forEach((...element) => {
-    if(element.tab === "Twitter" || 'Facebook'){
-        
+browserWindow.forEach((window) => {
+    for(let i = 0; i < window.tab.length; i++){
+        if(window.tab.includes(...socialsList)){
+            window.tab.splice(i, 1)
+        }
     }
+        
 });
