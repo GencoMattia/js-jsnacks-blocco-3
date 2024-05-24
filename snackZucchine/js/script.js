@@ -55,27 +55,20 @@ const zucchineList = [
         lenght: 19,
     },
 ];
-
-function numbersSum(...number){
-    let sum = 0;
-    sum += number;
-    return sum
-}
-
-const zucchineWeightSum = numbersSum(zucchineList.weight);
-
-console.log(zucchineWeightSum);
-
 const zucchineShort = [];
 const zucchineLong = [];
+let weight = 0;
 
-zucchineList.forEach((zucchina) =>{
+zucchineList.forEach((zucchina) => {
+    weight += zucchina.weight
     if(zucchina.lenght <= 8){
         zucchineShort.push(zucchina);
     } else {
         zucchineLong.push(zucchina)
     }
 });
+
+console.log(weight);
 
 console.log(zucchineShort);
 console.log(zucchineLong);
