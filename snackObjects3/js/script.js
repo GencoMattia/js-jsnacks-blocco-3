@@ -12,6 +12,11 @@
 // Il software deve guardare se c'è un social aperto ed eliminarlo dalle tab.
 // Nel caso la tab fosse attiva, deve attivare la successiva.
 
+const window = {
+    tab: ["Facebook", "GitHub", "Gmail"],
+    activeTab: 0,
+    }
+
 const browserWindow = [
     {
     tab: ["Facebook", "GitHub", "Gmail"],
@@ -25,11 +30,24 @@ const browserWindow = [
 
 const socialsList = ["Twitter", "Facebook"];
 
-browserWindow.forEach((window) => {
-    for(let i = 0; i < window.tab.length; i++){
-        if(window.tab.includes(...socialsList)){
-            window.tab.splice(i, 1)
+// browserWindow.forEach((window) => {
+//     for(let i = 0; i < window.tab.length; i++){
+//         if(window.tab.includes(...socialsList)){
+//             window.tab.splice(i, 1)
+//         }
+//     }    
+// });
+
+// console.log(browserWindow);
+
+const newTabs = windowObj.tab.filter((tab, index) => {
+    let isFound = false;
+    socialsList.forEach((social) => {
+        if(social === tab){
+            isFound = true;
         }
-    }
-        
+    });
+    return !isFound;
 });
+
+if
