@@ -3,7 +3,7 @@
 // Dividi in due array separati le zucchine che misurano meno o più di 8cm.
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
-const zucchine = [
+const zucchineList = [
     {
         type: "Nera",
         weight: 1,
@@ -54,4 +54,28 @@ const zucchine = [
         weight: 1,
         lenght: 19,
     },
-]
+];
+
+function numbersSum(...number){
+    let sum = 0;
+    sum += number;
+    return sum
+}
+
+const zucchineWeightSum = numbersSum(zucchineList.weight);
+
+console.log(zucchineWeightSum);
+
+const zucchineShort = [];
+const zucchineLong = [];
+
+zucchineList.forEach((zucchina) =>{
+    if(zucchina.lenght <= 8){
+        zucchineShort.push(zucchina);
+    } else {
+        zucchineLong.push(zucchina)
+    }
+});
+
+console.log(`Queste sono le zucchine corte ${zucchineShort}`);
+console.log(`Queste sono le zucchine LUNGHE ${zucchineLong}`);
