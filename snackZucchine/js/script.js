@@ -77,5 +77,5 @@ zucchineList.forEach((zucchina) =>{
     }
 });
 
-console.log(`Queste sono le zucchine corte ${zucchineShort}`);
-console.log(`Queste sono le zucchine LUNGHE ${zucchineLong}`);
+console.log(zucchineShort);
+console.log(zucchineLong);
